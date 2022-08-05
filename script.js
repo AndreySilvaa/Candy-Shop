@@ -69,14 +69,28 @@ function inicia(){
     }
 
     // Responsividade
+    const bar = document.getElementById("barras")
+    bar.addEventListener("click", displayMenu)
+    const itens = document.getElementById("itens")
+
+    console.log()
+    function displayMenu(){
+        itens.classList.toggle("show")
+    }
+
+/*
     body = document.getElementById("corpo")
     nav2 = document.getElementById("nav2")
     bar = document.getElementById("barras")
     itens = document.getElementById("itens")
     body.addEventListener("resize", display)
     bar.addEventListener("click", displayitens)
+    console.log(itens)
+    */
 }
 
+
+/*
 function display(){
     var twidth = window.innerWidth
     if(twidth < 1000){
@@ -93,17 +107,7 @@ function display(){
         nitens = 1
     }
 }
-
-function displayitens(){
-    if(nitens == 0){
-        itens.style.display = "flex"
-        nitens = 1
-    }else if(nitens == 1){
-        itens.style.display = "none"
-        nitens = 0
-    }
-}
-
+*/
 window.addEventListener("load", inicia)
 
 //MODAL WINDOW
