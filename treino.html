@@ -9,228 +9,230 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/698b380f29.js" crossorigin="anonymous"></script>
 </head>
-<body id="corpo" onresize="display()">
-    <nav>
-        <div id="nav1">
-            <a href="#">
-                <img src="imgs/logo.svg" alt="">
-            </a>
-            
-            <ul id="itens" class="exibir">
-                <li><a href="#">Home</a></li>
-                <li><a href="#art1">About</a></li>
-                <li><a href="#art2">Store</a></li>
-            </ul>
-        </div>
-
-        <div id="nav2">
-            <div id="contato">
-                <i class="fas fa-phone"></i>
-                <span>+ 123 456 789</span>
+<div id="wrapper">
+    <body id="corpo" onresize="display()">
+        <nav>
+            <div id="nav1">
+                <a href="#">
+                    <img src="imgs/logo.svg" alt="">
+                </a>
+    
+                <ul id="itens" class="exibir">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#art1">About</a></li>
+                    <li><a href="#art2">Store</a></li>
+                </ul>
             </div>
-            <div id="compra">
-                <i class="fas fa-shopping-cart"></i>
-                <span>0 Items - $0</span>
-            </div>
-        </div>
-
-        <div id="barras">
-            <i class="fas fa-bars"></i>
-        </div>
-    </nav>
-
-    <div id="cart" class="carrinho">
-        <div id="cartitens">
-            <!--
-            <div class="itemcart">
-
-                <img src="imgs/sweets-3.jpeg" alt="">
-
-                <div class="nameitem">
-                    <p>Sweet Item</p>
-                    <span>$15</span>
+    
+            <div id="nav2">
+                <div id="contato">
+                    <i class="fas fa-phone"></i>
+                    <span>+ 123 456 789</span>
                 </div>
-
-                <a href=""><i class="fas fa-trash"></i></a>
+                <div id="compra">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span>0 Items - $0</span>
+                </div>
             </div>
-            -->
-            <div id="conta">
-                <span>Total</span>
-                <span id="total">$0</span>
+    
+            <div id="barras">
+                <i class="fas fa-bars"></i>
             </div>
-
-            <div id="finalcompra">
-                <button id="btclear" class="cartbts">CLEAR CART</button>
-                <button id="btcheckout" class="cartbts">CHECKOUT</button>
+        </nav>
+    
+        <div id="cart" class="carrinho">
+            <div id="cartitens">
+                <!--
+                <div class="itemcart">
+    
+                    <img src="imgs/sweets-3.jpeg" alt="">
+    
+                    <div class="nameitem">
+                        <p>Sweet Item</p>
+                        <span>$15</span>
+                    </div>
+    
+                    <a href=""><i class="fas fa-trash"></i></a>
+                </div>
+                -->
+                <div id="conta">
+                    <span>Total</span>
+                    <span id="total">$0</span>
+                </div>
+    
+                <div id="finalcompra">
+                    <button id="btclear" class="cartbts">CLEAR CART</button>
+                    <button id="btcheckout" class="cartbts">CHECKOUT</button>
+                </div>
             </div>
         </div>
-    </div>
-
-    <header>
-        <h1>Welcome To <span>Grandma's</span></h1>
-        <button>EXPLORE</button>
-    </header>
-
-    <article id="art1">
-        <section>
-            <h2>About <span>Us</span></h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, aliquam voluptas beatae vitae expedita consectetur nesciunt quia deserunt asperiores facere fuga dicta fugiat corrupti et omnis porro at dolorum! Ad!</p>
+    
+        <header>
+            <h1>Welcome To <span>Grandma's</span></h1>
             <button>EXPLORE</button>
+        </header>
+    
+        <article id="art1">
+            <section>
+                <h2>About <span>Us</span></h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, aliquam voluptas beatae vitae expedita consectetur nesciunt quia deserunt asperiores facere fuga dicta fugiat corrupti et omnis porro at dolorum! Ad!</p>
+                <button>EXPLORE</button>
+            </section>
+            <div id="divimg">
+                <div id="imgsweet"><img id="sweetg" src="imgs/sweets-1.jpeg" alt=""></div>
+            </div>
+        </article>
+    
+        <article id="art2">
+            <section>
+                <h2>Our <span style="font-size: 60px; color: #EF7998 ;">Store</span></h2>
+                <ul id="list-itens">
+                    <li>ALL</li>
+                    <li>CAKES</li>
+                    <li>CUPCAKES</li>
+                    <li>SWEETS</li>
+                    <li>DOUGHNUTS</li>
+                </ul>
+                <div id="pesquisa">
+                    <div><i class="fas fa-search"></i></div>
+                    <input id="pesquisainput" type="text" placeholder="item...">
+                </div>
+            </section>
+    
+            <div id="imgs">
+                <div class="item">
+                    <div class="img-container"><img class="img" src="imgs/sweets-1.jpeg" alt="">
+                        <div class="iconcart"><i class="fas fa-shopping-cart"></i></div></div>
+                    <div class="nomevalor">
+                        <span class="item-name">Sweet Item</span>
+                        <span>$5</span>
+                    </div>
+                </div>
+    
+                <div class="item">
+                    <div class="img-container"><img class="img" src="imgs/cupcake-1.jpeg" alt="">
+                        <div class="iconcart"><i class="fas fa-shopping-cart"></i></div></div>
+                    <div class="nomevalor">
+                        <span class="item-name">Cupcake Item
+                        </span>
+                        <span>$5</span>
+                    </div>
+                </div>
+    
+                <div class="item">
+                    <div class="img-container"><img class="img" src="imgs/cake-1.jpeg" alt="">
+                        <div class="iconcart"><i class="fas fa-shopping-cart"></i></div></div>
+                    <div class="nomevalor">
+                        <span class="item-name">Cake Item
+                        </span>
+                        <span>$5</span>
+                    </div>
+                </div>
+    
+                <div class="item">
+                    <div class="img-container"><img class="img" src="imgs/doughnut-1.jpeg" alt="">
+                        <div class="iconcart"><i class="fas fa-shopping-cart"></i></div></div>
+                    <div class="nomevalor">
+                        <span class="item-name">Dougnut Item
+                        </span>
+                        <span>$5</span>
+                    </div>
+                </div>
+    
+                <div class="item">
+                    <div class="img-container"><img class="img" src="imgs/sweets-2.jpeg" alt="">
+                        <div class="iconcart"><i class="fas fa-shopping-cart"></i></div></div>
+                    <div class="nomevalor">
+                        <span class="item-name">Sweet Item</span>
+                        <span>$10</span>
+                    </div>
+                </div>
+    
+                <div class="item">
+                    <div class="img-container"><img class="img" src="imgs/cupcake-2.jpeg" alt="">
+                        <div class="iconcart"><i class="fas fa-shopping-cart"></i></div></div>
+                    <div class="nomevalor">
+                        <span class="item-name">Cupcake Item</span>
+                        <span>$10</span>
+                    </div>
+                </div>
+    
+                <div class="item">
+                    <div class="img-container"><img class="img" src="imgs/cake-2.jpeg" alt="">
+                        <div class="iconcart"><i class="fas fa-shopping-cart"></i></div></div>
+                    <div class="nomevalor">
+                        <span class="item-name">Cake Item
+                        </span>
+                        <span>$10</span>
+                    </div>
+                </div>
+    
+                <div class="item">
+                    <div class="img-container"><img class="img" src="imgs/doughnut-2.jpeg" alt="">
+                        <div class="iconcart"><i class="fas fa-shopping-cart"></i></div></div>
+                    <div class="nomevalor">
+                        <span class="item-name">Dougnut Item
+                        </span>
+                        <span>$10</span>
+                    </div>
+                </div>
+    
+                <div class="item">
+                    <div class="img-container"><img class="img" src="imgs/sweets-3.jpeg" alt="">
+                        <div class="iconcart"><i class="fas fa-shopping-cart"></i></div></div>
+                    <div class="nomevalor">
+                        <span class="item-name">Sweet Item</span>
+                        <span>$15</span>
+                    </div>
+                </div>
+    
+                <div class="item">
+                    <div class="img-container"><img class="img" src="imgs/cupcake-3.jpeg" alt="">
+                        <div class="iconcart"><i class="fas fa-shopping-cart"></i></div></div>
+                    <div class="nomevalor">
+                        <span class="item-name">Cupcake Item
+                        </span>
+                        <span>$15</span>
+                    </div>
+                </div>
+    
+                <div class="item">
+                    <div class="img-container"><img class="img" src="imgs/cake-3.jpeg" alt="">
+                        <div class="iconcart"><i class="fas fa-shopping-cart"></i></div></div>
+                    <div class="nomevalor">
+                        <span class="item-name">Cake Item
+                        </span>
+                        <span>$15</span>
+                    </div>
+                </div>
+    
+                <div class="item">
+                    <div class="img-container"><img class="img" src="imgs/doughnut-3.jpeg" alt="">
+                        <div class="iconcart"><i class="fas fa-shopping-cart"></i></div></div>
+                    <div class="nomevalor">
+                        <span class="item-name">Dougnut Item
+                        </span>
+                        <span>$15</span>
+                    </div>
+                </div>
+    
+    
+            </div>
+        </article>
+    
+        <section id="modal">
+            <div id="imgmodal">
+                <i id="left" class="btn prev far fa-arrow-alt-circle-left"></i>
+                <i id="rigth" class="btn afte rigth far fa-arrow-alt-circle-right"></i>
+                <div id="close">X</div>
+            </div>
         </section>
-        <div id="divimg">
-            <div id="imgsweet"><img id="sweetg" src="imgs/sweets-1.jpeg" alt=""></div>
-        </div>
-    </article>
-
-    <article id="art2">
-        <section>
-            <h2>Our <span style="font-size: 60px; color: #EF7998 ;">Store</span></h2>
-            <ul id="list-itens">
-                <li>ALL</li>
-                <li>CAKES</li>
-                <li>CUPCAKES</li>
-                <li>SWEETS</li>
-                <li>DOUGHNUTS</li>
-            </ul>
-            <div id="pesquisa">
-                <div><i class="fas fa-search"></i></div>
-                <input id="pesquisainput" type="text" placeholder="item...">
-            </div>
-        </section>
-
-        <div id="imgs">
-            <div class="item">
-                <div class="img-container"><img class="img" src="imgs/sweets-1.jpeg" alt="">
-                    <div class="iconcart"><i class="fas fa-shopping-cart"></i></div></div>
-                <div class="nomevalor">
-                    <span class="item-name">Sweet Item</span>
-                    <span>$5</span>
-                </div>
-            </div>
-
-            <div class="item">
-                <div class="img-container"><img class="img" src="imgs/cupcake-1.jpeg" alt="">
-                    <div class="iconcart"><i class="fas fa-shopping-cart"></i></div></div>
-                <div class="nomevalor">
-                    <span class="item-name">Cupcake Item
-                    </span>
-                    <span>$5</span>
-                </div>
-            </div>
-
-            <div class="item">
-                <div class="img-container"><img class="img" src="imgs/cake-1.jpeg" alt="">
-                    <div class="iconcart"><i class="fas fa-shopping-cart"></i></div></div>
-                <div class="nomevalor">
-                    <span class="item-name">Cake Item
-                    </span>
-                    <span>$5</span>
-                </div>
-            </div>
-
-            <div class="item">
-                <div class="img-container"><img class="img" src="imgs/doughnut-1.jpeg" alt="">
-                    <div class="iconcart"><i class="fas fa-shopping-cart"></i></div></div>
-                <div class="nomevalor">
-                    <span class="item-name">Dougnut Item
-                    </span>
-                    <span>$5</span>
-                </div>
-            </div>
-
-            <div class="item">
-                <div class="img-container"><img class="img" src="imgs/sweets-2.jpeg" alt="">
-                    <div class="iconcart"><i class="fas fa-shopping-cart"></i></div></div>
-                <div class="nomevalor">
-                    <span class="item-name">Sweet Item</span>
-                    <span>$10</span>
-                </div>
-            </div>
-
-            <div class="item">
-                <div class="img-container"><img class="img" src="imgs/cupcake-2.jpeg" alt="">
-                    <div class="iconcart"><i class="fas fa-shopping-cart"></i></div></div>
-                <div class="nomevalor">
-                    <span class="item-name">Cupcake Item</span>
-                    <span>$10</span>
-                </div>
-            </div>
-
-            <div class="item">
-                <div class="img-container"><img class="img" src="imgs/cake-2.jpeg" alt="">
-                    <div class="iconcart"><i class="fas fa-shopping-cart"></i></div></div>
-                <div class="nomevalor">
-                    <span class="item-name">Cake Item
-                    </span>
-                    <span>$10</span>
-                </div>
-            </div>
-
-            <div class="item">
-                <div class="img-container"><img class="img" src="imgs/doughnut-2.jpeg" alt="">
-                    <div class="iconcart"><i class="fas fa-shopping-cart"></i></div></div>
-                <div class="nomevalor">
-                    <span class="item-name">Dougnut Item
-                    </span>
-                    <span>$10</span>
-                </div>
-            </div>
-
-            <div class="item">
-                <div class="img-container"><img class="img" src="imgs/sweets-3.jpeg" alt="">
-                    <div class="iconcart"><i class="fas fa-shopping-cart"></i></div></div>
-                <div class="nomevalor">
-                    <span class="item-name">Sweet Item</span>
-                    <span>$15</span>
-                </div>
-            </div>
-
-            <div class="item">
-                <div class="img-container"><img class="img" src="imgs/cupcake-3.jpeg" alt="">
-                    <div class="iconcart"><i class="fas fa-shopping-cart"></i></div></div>
-                <div class="nomevalor">
-                    <span class="item-name">Cupcake Item
-                    </span>
-                    <span>$15</span>
-                </div>
-            </div>
-
-            <div class="item">
-                <div class="img-container"><img class="img" src="imgs/cake-3.jpeg" alt="">
-                    <div class="iconcart"><i class="fas fa-shopping-cart"></i></div></div>
-                <div class="nomevalor">
-                    <span class="item-name">Cake Item
-                    </span>
-                    <span>$15</span>
-                </div>
-            </div>
-
-            <div class="item">
-                <div class="img-container"><img class="img" src="imgs/doughnut-3.jpeg" alt="">
-                    <div class="iconcart"><i class="fas fa-shopping-cart"></i></div></div>
-                <div class="nomevalor">
-                    <span class="item-name">Dougnut Item
-                    </span>
-                    <span>$15</span>
-                </div>
-            </div>
-
-
-        </div>
-    </article>
-
-    <section id="modal">
-        <div id="imgmodal">
-            <i id="left" class="btn prev far fa-arrow-alt-circle-left"></i>
-            <i id="rigth" class="btn afte rigth far fa-arrow-alt-circle-right"></i>
-            <div id="close">X</div>
-        </div>
-    </section>
-
-    <footer>
-        <small>© Copyright 2022 Andrey Silva. All Rights Reserved.</small>
-    </footer>
-
-    <script src="script.js"></script>
-</body>
+    
+        <footer>
+            <small>© Copyright 2022 Andrey Silva. All Rights Reserved.</small>
+        </footer>
+    
+        <script src="script.js"></script>
+    </body>
+</div>
 </html>

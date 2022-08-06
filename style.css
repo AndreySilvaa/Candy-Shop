@@ -7,6 +7,11 @@ html{
     transition: all 1s;
 }
 
+#wrapper{
+    overflow-x: hidden;
+    position: relative;
+}
+
 body{
     border: 0px;
     margin: 0px;
