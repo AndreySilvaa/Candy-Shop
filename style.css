@@ -1,3 +1,7 @@
+html{
+    scroll-behavior: smooth;
+}
+
 *{
     box-sizing: border-box;
     transition: all 1s;
@@ -41,7 +45,7 @@ nav{
     transition: 1s;
 }
 
-#nav1 ul li:hover{
+#nav1 ul li a:hover{
     color: black;
 }
 
@@ -398,13 +402,14 @@ footer{
         background-color: white;
         margin: 0 !important;
         padding: 0;
-        left: 105%;
+        left: 0%;
         flex-direction: column;
         align-items: flex-end;
         justify-content: space-evenly;
         align-items: center;
         letter-spacing: 2px;
         box-shadow: 0px 0px 2px 0px;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
     }
 
     #nav2 {
@@ -486,6 +491,15 @@ footer{
     #art2 input {
         width: 100%;
     }
+
+    .iconcart{
+        right: 0px;
+        font-size: 30px;
+    }
+
+    .img-container:hover > .iconcart{
+        transform: translate(0px, 0px);
+    }
 }
 
 /*  CARRINHO  */
@@ -500,14 +514,16 @@ footer{
     animation: giro 0.8s;
 }
 
-.showcart{
+.showcart {
     width: 300px;
-    background-color: #ffeafa;
+    background-color: #ffecf0;
     color: #1c1c1c;
     position: absolute;
     right: 0px;
     padding: 25px;
-    animation: giro2 0.8s; 
+    animation: giro2 0.8s;
+    box-shadow: 0px 0px 4px 1px white;
+    border-bottom-left-radius: 30px;
 }
 
 @keyframes giro{
@@ -619,8 +635,11 @@ footer{
         padding: 34px;
     }
 
+    
+
     .showcart{
         width: 100%;
+        border-bottom-right-radius: 30px;
     }
 }
 
@@ -636,7 +655,7 @@ footer{
 
 .show{
     transition: 0.3s;
-    left: 0% !important;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%) !important;
 }
 
 

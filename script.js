@@ -77,37 +77,8 @@ function inicia(){
     function displayMenu(){
         itens.classList.toggle("show")
     }
-
-/*
-    body = document.getElementById("corpo")
-    nav2 = document.getElementById("nav2")
-    bar = document.getElementById("barras")
-    itens = document.getElementById("itens")
-    body.addEventListener("resize", display)
-    bar.addEventListener("click", displayitens)
-    console.log(itens)
-    */
 }
 
-
-/*
-function display(){
-    var twidth = window.innerWidth
-    if(twidth < 1000){
-        nav2.style.display = "none"
-        bar.style.display = "flex"
-        itens.style.display = "none"
-        nitens = 0
-    }
-
-    if(twidth > 1000){
-        nav2.style.display = "flex"
-        bar.style.display = "none"
-        itens.style.display = "flex"
-        nitens = 1
-    }
-}
-*/
 window.addEventListener("load", inicia)
 
 //MODAL WINDOW
